@@ -14,13 +14,40 @@ export function ContactForm() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you would typically send the data to your backend
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    setFormData({ name: "", email: "", message: "" });
-    setTimeout(() => setSubmitted(false), 3000);
+    
+    try {
+      // Send email using Web3Forms
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: 'd2339db8-1810-4356-806e-62316a9e5dff', // Replace with your key from https://web3forms.com
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          subject: `New Contact Form Message from ${formData.name}`
+        })
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        console.log("Form submitted:", formData);
+        setSubmitted(true);
+        setFormData({ name: "", email: "", message: "" });
+        setTimeout(() => setSubmitted(false), 3000);
+      } else {
+        alert('Failed to send message. Please try again or email us directly.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Failed to send message. Please try again or email us directly.');
+    }
   };
 
   return (
