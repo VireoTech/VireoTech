@@ -163,9 +163,21 @@ export function Footer() {
           <div className="footer-copyright">
             <p>&copy; {new Date().getFullYear()} Vireotech. All rights reserved.</p>
             <div className="footer-legal">
-              <a href="#privacy">Privacy Policy</a>
-              <span>•</span>
-              <a href="#terms">Terms of Service</a>
+              <NavLink
+                to="/privacy-policy"
+                className="footer-legal-link"
+              >
+                Privacy Policy
+              </NavLink>
+
+              <span className="footer-divider">•</span>
+
+              <NavLink
+                to="/terms-of-service"
+                className="footer-legal-link"
+              >
+                Terms of Service
+              </NavLink>
             </div>
           </div>
         </div>

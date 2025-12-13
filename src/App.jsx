@@ -1,6 +1,6 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Header, Footer } from "./components/layout";
-import { Home, PortfolioPage, AboutPage, ContactPage, ServicePage } from "./components/pages";
+import { Home, PortfolioPage, TermsOfService, PrivacyPolicy, AboutPage, ContactPage, ServicePage } from "./components/pages";
 
 export default function App() {
   return (
@@ -12,6 +12,8 @@ export default function App() {
           <Route path="/service" element={ <ServicePage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} /> 
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
