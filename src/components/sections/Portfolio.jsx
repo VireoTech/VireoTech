@@ -7,8 +7,8 @@ const projects = [
     description: "Professional website for funeral homes with service listings, obituaries, and online memorial features. Designed with sensitivity and ease of use for grieving families.",
     tags: ["JavaScript", "HTML5", "CSS3", "Responsive Design"],
     image: "https://raw.githubusercontent.com/Hashish03/VireoTech/main/src/assets/Images/funeral-home.webp?w=500&h=300&fit=crop",
-    github: "https://Hashish03.github.io/funeral-home/",
-    live: "#",
+    github: "https://Hashish03.github.io/funeral-home",
+    live: "https://Hashish03.github.io/funeral-home",
   },
   {
     title: "K2Mol Business Website",
@@ -16,7 +16,7 @@ const projects = [
     tags: ["JavaScript", "Bootstrap", "jQuery", "PHP"],
     image: "https://raw.githubusercontent.com/Hashish03/VireoTech/main/src/assets/Images/busniess.webp?w=500&h=300&fit=crop",
     github: "https://Hashish03.github.io/k2mol_website",
-    live: "#",
+    live: "https://Hashish03.github.io/k2mol_website",
   },
   {
     title: "Sneaker.inc E-Commerce",
@@ -24,14 +24,14 @@ const projects = [
     tags: ["React", "Node.js", "MongoDB", "Stripe API"],
     image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=500&h=300&fit=crop",
     github: "https://Hashish03.github.io/Sneaker.inc",
-    live: "#",
+    live: "https://Hashish03.github.io/Sneaker.inc",
   },
   {
     title: "Real Estate Platform",
     description: "Property listing platform for rental properties and homes for sale across multiple locations. Features advanced search filters, map integration, and property comparison tools.",
     tags: ["React", "Node.js", "PostgreSQL", "Google Maps API"],
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&h=300&fit=crop",
-    github: "https://github.com/yourusername/real-estate-platform",
+    github: "https://github.com/Hashish03/real-estate-platform",
     live: "#",
   },
   {
@@ -39,7 +39,7 @@ const projects = [
     description: "Online taxi fare calculation and booking system with real-time pricing, route optimization, and driver matching. Includes fare estimation and trip history.",
     tags: ["JavaScript", "Google Maps API", "Firebase", "Bootstrap"],
     image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=500&h=300&fit=crop",
-    github: "https://github.com/yourusername/Cash_Ride",
+    github: "https://github.com/Hashish03/Cash_Ride",
     live: "#",
   },
   {
