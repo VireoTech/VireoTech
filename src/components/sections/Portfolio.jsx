@@ -54,7 +54,7 @@ const projects = [
     title: "Cafe Website",
     description: "Responsive website for a local coffee shop with online ordering and menu management. Features modern design and mobile-first approach.",
     tags: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
-    image: "https://images.unsplash.com/photo-1554118812-1e0d58224f24?w=500&h=300&fit=crop",
+    image: "https://raw.githubusercontent.com/Hashish03/VireoTech/main/src/assets/Images/cafe.webp?w=500&h=300&fit=crop",
     github: "https://github.com/yourusername/cafe-website",
     live: "https://cafe-website.vercel.app",
   },
