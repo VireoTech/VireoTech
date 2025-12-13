@@ -89,7 +89,7 @@ export function Footer() {
 
                 <li>
                   <NavLink 
-                    to="/services"
+                    to="/service"
                     className={({ isActive }) =>
                       isActive ? "footer-link active" : "footer-link"
                     }
@@ -100,7 +100,7 @@ export function Footer() {
 
                 <li>
                   <NavLink 
-                    to="/services"
+                    to="/service"
                     className={({ isActive }) =>
                       isActive ? "footer-link active" : "footer-link"
                     }
