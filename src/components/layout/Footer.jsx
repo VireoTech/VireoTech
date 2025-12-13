@@ -65,6 +65,7 @@ export function Footer() {
               <h4>Quick Links</h4>
               <ul className="footer-links">
                 <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/service">Service</NavLink></li>
                 <li><NavLink to="/portfolio">Portfolio</NavLink></li>
                 <li><NavLink to="/about">About</NavLink></li>
                 <li><NavLink to="/contact">Contact</NavLink></li>
@@ -75,12 +76,52 @@ export function Footer() {
             <div className="footer-section">
               <h4>Services</h4>
               <ul className="footer-links">
-                <li><a href="/#web-design">Web Design</a></li>
-                <li><a href="/#development">Development</a></li>
-                <li><a href="/#branding">Branding</a></li>
-                <li><a href="/#consulting">Consulting</a></li>
+                <li>
+                  <NavLink 
+                    to="/portfolio"
+                    className={({ isActive }) =>
+                      isActive ? "footer-link active" : "footer-link"
+                    }
+                  >
+                    Web Designs
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink 
+                    to="/services"
+                    className={({ isActive }) =>
+                      isActive ? "footer-link active" : "footer-link"
+                    }
+                  >
+                    Development
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink 
+                    to="/services"
+                    className={({ isActive }) =>
+                      isActive ? "footer-link active" : "footer-link"
+                    }
+                  >
+                    Branding
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink 
+                    to="/contact"
+                    className={({ isActive }) =>
+                      isActive ? "footer-link active" : "footer-link"
+                    }
+                  >
+                    Consulting
+                  </NavLink>
+                </li>
               </ul>
             </div>
+
 
             {/* Contact Info */}
             <div className="footer-section footer-contact">

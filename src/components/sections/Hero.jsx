@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export function Hero() {
   return (
     <section className="hero">
@@ -7,7 +9,9 @@ export function Hero() {
           Custom web solutions for businesses and creatives using React, HTML,
           and JavaScript
         </p>
-        <button className="cta-button">Get Started</button>
+        <NavLink to="/contact" className="cta-button">
+            Get Started
+        </NavLink>
       </div>
     </section>
   );

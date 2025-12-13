@@ -187,8 +187,10 @@ export function ServicePage() {
                   </li>
                 ))}
               </ul>
-              <button className="cta-button">Get Started</button>
-            </div>
+              <NavLink to="/contact" className="cta-button">
+                 Get Started
+              </NavLink>
+             </div>
           ))}
         </div>
       </section>
@@ -237,7 +239,12 @@ export function ServicePage() {
             Contact us for a free consultation on your specific needs.
           </p>
           <div className="cta-buttons">
-            <button className="secondary-button">Schedule Call</button>
+            <a
+              href="tel:62498690"
+              className="secondary-button"
+            >
+              Schedule Call
+            </a>
           </div>
         </div>
       </section>

@@ -71,7 +71,7 @@ export function ValueSection() {
         
         <div className="value-stats">
           <div className="stat-item">
-            <div className="stat-number">25+</div>
+            <div className="stat-number">15+</div>
             <div className="stat-label">Projects Completed</div>
           </div>
           <div className="stat-item">

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { Award, Clock, Users, Target, Shield, Lightbulb } from 'lucide-react';
 
 export function AboutPage() {
@@ -214,9 +215,9 @@ export function AboutPage() {
         <div className="cta-section">
           <h2>Ready to Work Together?</h2>
           <p>Let's discuss how I can help bring your digital vision to life</p>
-          <button className="cta-button">
+          <NavLink to="/contact" className="cta-button">
             Start Your Project
-          </button>
+          </NavLink>
         </div>
       </div>
     </div>
