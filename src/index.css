@@ -2220,7 +2220,6 @@ body.menu-open {
 .footer-legal {
   display: flex;
   align-items: center;
-  gap: 1px;
   font-size: 14px;
 }
 

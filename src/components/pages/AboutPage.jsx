@@ -26,9 +26,8 @@ export function AboutPage() {
   ];
 
   const stats = [
-    { number: "15+", label: "Projects Completed" },
+    { number: "8+", label: "Projects Completed" },
     { number: "12hr", label: "Response Time" },
-    { number: "100%", label: "Client Satisfaction" },
     { number: "2+ Years", label: "Development Experience" }
 
   ];
